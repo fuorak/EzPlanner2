@@ -1,0 +1,33 @@
+/*popup.html*/
+
+* {
+    width: 100%;
+}
+
+#planningTable {
+    width: 500px;
+    margin: 25px;
+    padding: 4px;
+}
+
+
+.leftRow {
+    width: 50%;
+    display: inline-block;
+    border: 1px solid black;
+    align-content: flex-end;
+}
+
+.rightRow {
+    width: 50%;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+.groupBox {
+    display: flex;
+}
+
+body {
+    margin: 25px;
+}

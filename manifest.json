@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Field Extractor",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Field Extractor"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+      "matches": [ "https://3381659.app.netsuite.com/app/accounting/transactions/salesord.nl?id=*" ],
+      "js": [ "content.js" ],
+      "run_at": "document_idle"
+    }
+  ]
+}
