@@ -2,6 +2,7 @@
 
 * {
     width: 100%;
+    font-family: 'Comic Sans MS';
 }
 
 #planningTable {
@@ -11,23 +12,48 @@
 }
 
 
-.leftRow {
-    width: 50%;
+.leftItem {
+    width: 40%;
     display: inline-block;
-    border: 1px solid black;
-    align-content: flex-end;
+    text-align: end;
+    justify-content: center;
+    align-items: center;
 }
 
-.rightRow {
-    width: 50%;
+.rightItem {
+    width: 60%;
     display: inline-block;
-    border: 1px solid black;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .groupBox {
     display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: rgba(222, 19, 4, .7);
+    color: ghostwhite;
+    border-radius: 10px;
+    padding: 5px;
 }
 
 body {
     margin: 25px;
+}
+
+html {
+    background-color: dimgray;
+}
+
+img {
+    width: 50%;
+    height: auto;
+    margin-right: 50px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
