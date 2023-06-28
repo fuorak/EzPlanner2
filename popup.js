@@ -24,15 +24,5 @@ chrome.runtime.sendMessage({ action: 'getFields' }, function (response) {
         } else if (key === "orderNotes") {
             orderNotesInput.innerHTML = response[key];
         }
-
-        /*
-         * original loop provided by ChatGPT
-         * 
-        if (response.hasOwnProperty(key)) {
-            const fieldElement = document.createElement('div');
-            fieldElement.innerText = `${key}: ${response[key]}`;
-            fieldsContainer.appendChild(fieldElement);
-        }
-        */
     }
 });

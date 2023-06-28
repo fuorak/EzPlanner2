@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Field Extractor",
+  "name": "Planner Helper",
   "version": "1.0",
   "permissions": [
     "activeTab",
@@ -8,7 +8,7 @@
   ],
   "action": {
     "default_popup": "popup.html",
-    "default_title": "Field Extractor"
+    "default_title": "Planner Helper"
   },
   "background": {
     "service_worker": "background.js"
